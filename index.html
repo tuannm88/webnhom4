@@ -1,43 +1,195 @@
 <!DOCTYPE html>
-<html>
-
+<html ng-app="myApp">
 <head>
-  <title>Brown Bears</title>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <title>Group 4 Fashion</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
 <body>
-<h1>The Brown Bear</h1>
-<div id="introduction">
-  <h2>About Brown Bears</h2>
-  <p>The brown bear (<i>Ursus arctos</i>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the
-    Atlas bear and the Himalayan brown bear.</p>
-  <a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">Learn More</a>
-  <h3>Species</h3>
-  <ul>
-    <li>Arctos</li>
-    <li>Collarus</li>
-    <li>Horribilis</li>
-    <li>Nelsoni (extinct)</li>
-  </ul>
-  <h3>Features</h3>
-  <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
-</div>
-<div id="habitat">
-  <h2>Habitat</h2>
-  <h3>Countries with Large Brown Bear Populations</h3>
-  <ol>
-    <li>Russia</li>
-    <li>United States</li>
-    <li>Canada</li>
-  </ol>
-  <h3>Countries with Small Brown Bear Populations</h3>
-  <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
-</div>
-<div id="media">
-  <h2>Media</h2>
-  <img src="https://content.codecademy.com/courses/web-101/web101-image_brownbear.jpg" />
-  <video src="https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" height="240" width="320" controls>Video not supported</video>
-</div>
-</body>
+<div id="main">
+    <!-- Phan header-->
+    <div id="header">
+        <!--Begin:Nav-->
+        <ul id="nav">
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">THƯƠNG HIỆU </a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+            <!--Navigation more-->
+            <li>
+                <a href="">
+                    THÊM
+                    <i class=" nav-arrow-down ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="#">PHỤ KIỆN</a></li>
+                    <li><a href="#">BỘ SƯU TẬP </a></li>
+                    <li><a href="#">SALE</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--End:Nav-->
+        <!--Begin:Search buttom-->
+        <div class="search-btn">
+            <i class=" search-icon ti-search"></i>
+        </div>
+    </div>
+        <div id="slider">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-</html>
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/ảnh%20thời%20trang%201.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/ảnh%20thời%20trang%202.jpg" alt="Chicago" class="d-block" style="width:100%">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    <div class="content">
+        <h3>Danh mục sản phẩm</h3>
+        <div class= "row">
+            <div class ="col-12 col-sm-6 col-md-4 image">
+                <img src="./images/áo%20polo%20kẻ%20ngang.png" alt="#">
+                <p class="sub">Áo polo kẻ ngang 2.DSTP630
+                  <p class="sub1">420,000₫</p>
+                </p>
+            </div>
+            <div class ="col-12 col-sm-6 col-md-4  image">
+                <img src="./images/áo%20polo%20tràn%20họa%20tiết.png" alt="#">
+                <p class="sub">Áo polo in tràn họa tiết Unit 1.DSTP646
+                <p class="sub1">400,000₫</p>
+                </p>
+            </div>
+            <div class ="col-12 col-sm-6 col-md-4  image">
+                <img src="./images/áo%20polo%20họa%20tiết%20pattern%20ngang.png" alt="#">
+                <p class="sub">Áo polo họa tiết Pattern ngang vai
+                <p class="sub1">420,000₫</p>
+                </p>
+            </div>
+            <div class ="col-12 col-sm-6 col-md-4  image">
+                <img src="./images/áo%20polo%20trơn%20logo%20thêu%20tay.jpg" alt="#">
+                <p class="sub">Áo polo trơn bo kẻ thêu logo tay
+                <p class="sub1">410,000₫</p>
+                </p>
+            </div>
+            <div class ="col-12 col-sm-6 col-md-4  image">
+                <img src="./images/áo%20polo%20phối%20màu%20color.png" alt="#">
+                <p class="sub">Áo polo phối màu color-block
+                <p class="sub1">390,000₫</p>
+                </p>
+            </div>
+            <div class ="col-12 col-sm-6 col-md-4  image">
+                <img src="./images/áo%20polo%20can%20phối%20vai.png" alt="#">
+                <p class="sub">Áo polo can phối vai 3.DSTP625
+                <p class="sub1">450,000₫</p>
+                </p>
+            </div>
+            </div>
+        </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                        <h4>Hộ KINH DOANH</h4>
+                        <p> Mã số thuế: 01M8017614</p>
+                        <p> Điện thoại: 0904636367.</p>
+                        <p> Email: cskh@group4fptaptech.vn</p>
+                        <p> Tòa nhà DETECH,TÔN THẤT THUYẾT, HÀ NỘI. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4> HỖ TRỢ KHÁCH HÀNG</h4>
+                        <ul>
+                            <li><a href="#">Hướng dẫn chọn size</a></li>
+                            <li><a href="#">Chính sách khách hàng thân thiết</a></li>
+                            <li><a href="#">Chính sách đổi hàng</a></li>
+                            <li><a href="#">Thanh toán, Giao nhận</a></li>
+                            <li><a href="#">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4>Về Chúng Tôi</h4>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#">Tìm đại lý</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+                    <div class="second2">
+                        <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                        <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                        <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+<script type="text/ng-template" id="pages/TRANG CHỦ.html">
+    <h1>TRANG CHỦ</h1>
+    <h3>{{message}}</h3>
+</script >
+
+<script type="text/ng-template" id="pages/blog.html">
+    <h1>BlogCodeLean.vn</h1>
+    <h3>{{message}}</h3>
+</script >
+
+<script type="text/ng-template" id="pages/about.html">
+    <h1>Home CodeLean.vn</h1>
+    <h3>{{message}}</h3>
+</script >
+<a href="#">TRANG CHỦ</a>
+<a href="#blog">Blog</a>
+<a href="/about">About</a>
+<div ng-view></div>
+<script src="app.js"></script>
+
+</body>
